@@ -1,0 +1,101 @@
+.top-bar {
+  background-color: $primary;
+  height: 46px;
+  color: $white;
+
+  a {
+    color: $white;
+  }
+
+  &-soc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 20px;
+      height: 20px;
+      margin: 0 5px;
+      transition: opacity 0.2s;
+
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+  }
+
+  &-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 14px;
+
+    li {
+      position: relative;
+
+      a {
+        padding: 3px 16px;
+      }
+
+      &::after {
+        content: '';
+        display: block;
+      }
+    }
+  }
+
+  &-link {
+    display: block;
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 500;
+  }
+
+  &-lang {
+    font-size: 14px;
+
+    &-selected {
+      font-size: 14px;
+    }
+
+    &-drop {
+      font-size: 14px;
+      
+
+      a {
+        color: #000;
+        display: block;
+        padding: 2px 5px;
+      }
+    }
+  }
+}
+
+.dropdown {
+  position: relative;
+
+  &-selected {
+    display: block;
+    position: relative;
+    padding-right: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 9px;
+      margin-top: -3px;
+      border-top: 7px solid $white;
+      border-left: 3px solid transparent;
+      border-right: 3px solid transparent;
+    }
+  }
+}

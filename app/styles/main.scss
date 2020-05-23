@@ -1,6 +1,15 @@
 @import 'fonts';
+@import 'vars';
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import 'header';
 
 body {
-  font-family: 'Open Sans', sans-serif;
-  background-color: cornflowerblue;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: $ffHeader;
 }

@@ -1,0 +1,26 @@
+$primary:       #5dae51 !default;
+// $secondary:     $gray-500 !default;
+$ffMain: 'Roboto', sans-serif;
+$ffHeader: 'Merriweather', serif;
+
+$grid-breakpoints: (
+  // Extra small screen / phone
+  xs: 0,
+  // Small screen / phone
+  sm: 576px,
+  // Medium screen / tablet
+  md: 768px,
+  // Large screen / desktop
+  lg: 1200px,
+  // Extra large screen / wide desktop
+  xl: 1680px
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 1220px,
+  xl: 1220px
+);
+
+$grid-gutter-width: 20px !default;

@@ -2,6 +2,34 @@
 //- like so './images/image.jpg',
 //- and not '../images/image.jpg'
 
-header
-  h1 Hello world!
-  img(src='./images/js-logo.svg' alt='js logo' width='200')
+header.page-start
+  .top-bar
+    .container.h-100
+      .row.align-items-center.h-100
+        .col.col-lg-3
+          a(href="#").top-bar-link Министерство здравоохранения Республики Казахстан
+        .col
+          ul.top-bar-list
+            li
+              a(href="#") Государственны закупки
+            li
+              a(href="#") Полезная информация
+        .col.col-lg-2
+          .top-bar-soc
+            a(href="#")
+              img(src="./images/icons/facebook.svg")
+            a(href="#")
+              img(src="./images/icons/youtube.svg")
+            a(href="#")
+              img(src="./images/icons/instagram.svg")
+        .col.col-lg-2
+          .top-bar-tel
+            a(href="tel:+77172251940") +7 7172 251940
+        .col.col-lg-1
+          .top-bar-lang.dropdown
+            button.top-bar-lang-selected.btn.btn-primary.dropdown-selected.dropdown-toggle(data-toggle="dropdown") Русский
+            .top-bar-lang-drop.dropdown-menu
+              a(href="#") Русский
+              a(href="#") Казахский
+              a(href="#") Английский
+    
