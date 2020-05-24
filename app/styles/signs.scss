@@ -1,0 +1,57 @@
+.sign {
+  &-section {
+    margin-top: 40px;
+  }
+
+  &-item {
+    text-align: center;
+    flex: 1;
+    position: relative;
+
+    & + .sign-item {
+      &::before {
+        content: '';
+        position: absolute;
+        top: 50px;
+        bottom: 60px;
+        left: 0;
+        border-left: 1px solid #e6e6e6;
+      }
+    }
+  }
+
+  &-text {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: $ffHeader;
+    margin-bottom: 42px;
+  }
+
+  &-img {
+    margin-bottom: 50px;
+    margin-top: 58px;
+  }
+}
+
+.sign-item.d-flex.align-items-center.text-left.p-4.justify-content-center {
+  @include media-breakpoint-down(md) {
+    padding: 10px !important;
+
+    .sign-img {
+      margin-right: 10px !important;
+    }
+  }
+}
+
+.bordered {
+  &-block {
+    border: 4px solid #e6e6e6;
+    height: 100%;
+    width: 100%;
+    transition: border-color 0.2s;
+
+    &:hover {
+      border-color: $primary;
+    }
+  }
+}

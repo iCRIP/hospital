@@ -1,0 +1,89 @@
+.about {
+  &-section {
+    padding: 56px 0 78px;
+  }
+
+  &-title {
+    font-family: $ffMain;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 19px;
+    margin-top: 38px;
+    font-weight: 500;
+
+    &-icon {
+      background-color: $primary;
+      width: 44px;
+      height: 44px;
+      display: inline-block;
+      line-height: 39px;
+      vertical-align: middle;
+      text-align: center;
+      margin-right: 26px;
+    }
+  }
+
+  &-text {
+    font-size: 18px;
+  }
+
+  &-link {
+    margin-top: 54px;
+
+    a {
+      color: $black;
+    }
+  }
+}
+
+.mission {
+  &-title {
+    display: flex;
+    flex-direction: column;
+    min-height: 371px;
+    position: relative;
+    padding-top: 46px;
+    padding-bottom: 52px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 40px;
+      border: 22px solid #e6e6e6;
+      width: 281px;
+
+      @include media-breakpoint-down(md) {
+        left: 20px;
+      }
+    }
+
+    &--white {
+      &::before {
+        border: 22px solid #fff;
+      }
+    }
+
+    * {
+      z-index: 2;
+      position: relative;
+    }
+
+    &-sub {
+      margin-top: auto;
+    }
+
+    &-pre {
+      font-size: 18px;
+      color: $primary;
+      margin-bottom: 24px;
+      font-family: $ffHeader;
+    }
+
+    &-main {
+      font-size: 36px;
+    }
+  }
+}

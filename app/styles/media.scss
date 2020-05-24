@@ -1,0 +1,64 @@
+.media {
+  &-section {
+    padding: 132px 0;
+    background-image: url('../images/media-bg.png');
+    background-size: cover;
+  }
+
+  &-slider {
+    .slider-item {
+      padding: 0 10px;
+      position: relative;
+      cursor: pointer;
+
+      &-video {
+        &::after {
+          content: url('../images/icons/play.svg');
+          background-color: rgba(0, 0, 0, 0.2);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 10px;
+          right: 10px;
+        }
+      }
+
+      img {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        display: block;
+      }
+    }
+
+    .slick-dots {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      margin-top: 51px;
+
+      li {
+        margin: 0 5px;
+      }
+
+      .slick-active {
+        button {
+          background-color: #707070;
+        }
+      }
+
+      button {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        font-size: 0;
+        padding: 0;
+        border: none;
+        background-color: #fff;
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+.slider {
+  display: flex;
+  margin-left: -20px;
+  margin-right: -20px;
+
+  @include media-breakpoint-down(sm) {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+
+  &-main {
+    &-wrap {
+      position: relative;
+      overflow: hidden;
+      width: 700px;
+
+      .slick-slider {
+        width: 100%;
+      }
+    }
+  }
+
+  &-counter {
+    position: absolute;
+    color: $white;
+    font-family: $ffHeader;
+    font-size: 24px;
+    right: 19px;
+    bottom: 28px;
+  }
+
+  &-dots {
+    position: absolute;
+    bottom: 38px;
+    left: 50px;
+    display: flex;
+
+    @include media-breakpoint-down(md) {
+      left: 30px;
+    }
+  }
+
+  &-dot {
+    margin-right: 10px;
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    opacity: 0.3;
+    background-color: $white;
+    transition: 0.2s;
+
+    &.active {
+      opacity: 1;
+    }
+  }
+
+  &-item {
+    display: flex !important;
+    height: 100%;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+
+    &-link {
+      position: absolute;
+      bottom: 0;
+      right: 10px;
+
+      a {
+        color: $white;
+      }
+    }
+  }
+
+  &-text {
+    background-color: $primary;
+    color: $white;
+    font-family: $ffHeader;
+    font-size: 24px;
+    padding: 38px 50px 32px;
+
+    @include media-breakpoint-down(md) {
+      padding: 38px 30px 40px;
+    }
+  }
+
+  &-texts {
+    height: 100%;
+
+    .slick-list,
+    .slick-track {
+      height: 100%;
+    }
+
+    .slick-slide > div {
+      height: 100%;
+    }
+
+    .slider-item {
+      @include media-breakpoint-down(md) {
+        padding-bottom: 30px;
+      }
+    }
+  }
+}

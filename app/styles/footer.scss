@@ -1,0 +1,66 @@
+.footer {
+  background: #1e1e1e;
+  color: $white;
+  padding: 50px 0 0;
+
+  &-text {
+    font-size: 18px;
+    font-family: $ffHeader;
+    padding-right: 20px;
+  }
+
+  &-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin-bottom: 18px;
+
+      a {
+        color: $white;
+      }
+    }
+  }
+
+  &-address {
+    margin-top: 53px;
+  }
+
+  span {
+    color: #707070;
+  }
+
+  &-tel {
+    a {
+      display: block;
+      margin-top: 16px;
+      font-size: 36px;
+      color: $white;
+    }
+  }
+
+  &-soc {
+    margin-top: 71px;
+
+    @include media-breakpoint-down(sm) {
+      margin-top: 20px;
+    }
+
+    a {
+      display: inline-block;
+      margin-right: 25px;
+      margin-top: 19px;
+    }
+  }
+
+  &-copy {
+    border-top: 1px solid #707070;
+    padding: 21px 0;
+    margin-top: 65px;
+
+    a {
+      color: $white;
+    }
+  }
+}
