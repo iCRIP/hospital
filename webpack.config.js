@@ -75,7 +75,14 @@ const commonConfig = merge([
     },
     plugins: [
       new HtmlPlugin({
-        template: './index.pug'
+        filename: 'index.html',
+        template: './index.pug',
+        minify: false
+      }),
+      new HtmlPlugin({
+        filename: 'about.html',
+        template: './about.pug',
+        minify: false
       }),
       new FriendlyErrorsPlugin(),
       new StylelintPlugin(lintStylesOptions)
@@ -84,7 +91,7 @@ const commonConfig = merge([
       noParse: /\.min\.js/
     }
   },
-  parts.loadPug(),
+  parts.loadPug({ pretty: true }),
   parts.lintJS({ include: paths.app, options: lintJSOptions }),
   parts.loadFonts({
     include: paths.app,
@@ -173,18 +180,18 @@ const productionConfig = merge([
     paths: glob.sync(`${paths.app}/**/*.+(pug|js)`, { nodir: true }),
     styleExtensions: ['.css', '.scss']
   }),
-  parts.minifyCSS({
-    options: {
-      discardComments: {
-        removeAll: true
-      }
-    }
-  }),
+  // parts.minifyCSS({
+  //   options: {
+  //     discardComments: {
+  //       removeAll: true
+  //     }
+  //   }
+  // }),
   parts.loadImages({
     include: paths.app,
     options: {
-      limit: 15000,
-      name: `${paths.images}/[name].[hash:8].[ext]`
+      limit: 1,
+      name: `${paths.images}/[name].[ext]`
     }
   }),
   // should go after loading images
