@@ -9,7 +9,7 @@ if (process.env.NODE_ENV !== 'production') {
 
 jQuery(document).ready(function ($) {
   // eslint-disable-next-line no-console
-  $('.navbar-menu-button, .mobile-menu-close').click(function () {
+  $('.navbar-menu-button, .mobile-menu-close-btn').click(function () {
     $('#mobile-menu').toggleClass('active')
   })
 

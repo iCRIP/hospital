@@ -1,0 +1,21 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title Document
+  body.page.page--white
+    .page-start
+      include includes/header.pug
+      include includes/mobile-menu.pug
+    .page-body
+      include includes/main-slider
+      include includes/mission
+      include includes/services
+      include includes/news
+      include includes/media
+      include includes/signs
+      include includes/external
+    .page-end
+      include includes/footer.pug

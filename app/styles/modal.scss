@@ -1,0 +1,63 @@
+.modal {
+  &-dialog {
+    width: 800px;
+    max-width: 100%;
+  }
+
+  &-content {
+    width: 800px;
+    max-width: 100%;
+    padding: 20px;
+    border-radius: 0;
+  }
+
+  &-header {
+    border-bottom: none;
+  }
+
+  &-body,
+  &-header {
+    max-width: 100%;
+    width: 478px;
+    margin: 0 auto;
+  }
+
+  &-form {
+    padding-bottom: 40px;
+
+    .btn {
+      text-transform: uppercase;
+      min-width: 246px;
+      font-size: 18px;
+      min-height: 65px;
+    }
+
+    &-action {
+      margin-top: 70px;
+    }
+
+    &-group {
+      display: block;
+      margin-bottom: 36px;
+
+      span {
+        margin-bottom: 9px;
+      }
+
+      input {
+        width: 100%;
+        height: 56px;
+        padding: 5px 10px;
+        border: 1px solid #707070;
+      }
+
+      textarea {
+        padding: 5px 10px;
+        border: 1px solid #707070;
+        display: block;
+        width: 100%;
+        min-height: 207px;
+      }
+    }
+  }
+}
