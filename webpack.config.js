@@ -84,6 +84,11 @@ const commonConfig = merge([
         template: './about.pug',
         minify: false
       }),
+      new HtmlPlugin({
+        filename: 'admin.html',
+        template: './admin.pug',
+        minify: false
+      }),
       new FriendlyErrorsPlugin(),
       new StylelintPlugin(lintStylesOptions)
     ],

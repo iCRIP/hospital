@@ -14,7 +14,7 @@
     }
 
     &::before {
-      content: '/ ';
+      content: "/ ";
     }
 
     a {
@@ -25,7 +25,7 @@
 
 .green-section {
   background-color: #5dae51;
-  background-image: url('../images/green-section-bg.png');
+  background-image: url("../images/green-section-bg.png");
   background-size: auto 100%;
   background-position: 56% center;
   background-repeat: no-repeat;
@@ -77,6 +77,92 @@
   &-end {
     margin-top: 100px;
   }
+
+  .team {
+    align-items: center;
+    margin-bottom: 83px;
+
+    &-name {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    &-img {
+      margin-top: 0;
+      margin-right: 64px;
+    }
+
+    &-position {
+      color: $primary;
+      margin-top: 20px;
+    }
+
+    img {
+      margin: 0;
+    }
+  }
+
+  ul {
+    list-style: none;
+    margin: 0 0 50px;
+    padding: 0;
+
+    li {
+      padding-left: 29px;
+      position: relative;
+      font-size: 18px;
+      line-height: 1.4;
+      margin-bottom: 25px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 10px;
+        width: 7px;
+        height: 7px;
+        border: 2px solid $primary;
+      }
+    }
+  }
+
+  h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 30px;
+
+    span {
+      color: $primary;
+    }
+  }
+
+  table {
+    margin-right: -10%;
+    margin-top: 45px;
+
+    @include media-breakpoint-down(md) {
+      margin-right: 0;
+    }
+
+    th {
+      color: #707070;
+      font-weight: 500;
+      padding: 12px 23px;
+      vertical-align: bottom;
+    }
+
+    td {
+      font-size: 18px;
+      border-top: 1px solid #707070;
+      padding: 23px 0 39px 23px;
+      vertical-align: top;
+
+      span {
+        color: $primary;
+        font-size: 16px;
+      }
+    }
+  }
 }
 
 .sidebar {
@@ -109,7 +195,7 @@
 
       &::after {
         opacity: 0;
-        content: url('../images/icons/arrow.svg');
+        content: url("../images/icons/arrow.svg");
         position: absolute;
         left: 100%;
         top: -2px;

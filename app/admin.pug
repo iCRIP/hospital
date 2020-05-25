@@ -1,0 +1,87 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title Document
+  body.page
+    .page-start
+      include includes/header.pug
+      include includes/mobile-menu.pug
+    .page-body.about-page
+      .container
+        ul.breadcrumbs
+          li
+            a(href="#") Главная
+          li
+            span O госпитале 
+        .row
+          .col.col-lg-8.col-12
+            h1.article-title Администрация
+        .row
+          aside.col.col-lg-3.col-12
+            .sidebar
+              ul.sidebar-list
+                li.active
+                  a(href="#") Администрация
+                li
+                  a(href="#") Лицензии
+                li
+                  a(href="#") Цели и задачи
+                li
+                  a(href="#") Этический кодекс
+                li
+                  a(href="#") Вакансии
+                li
+                  a(href="#") Контакты
+          .col.col-lg-6.col-12.offset-lg-2.article
+            article
+              .team
+                .team-img
+                  img(src="./images/admin-img.png")
+                .team-text
+                  .team-name Уразалина Динара Аманболовна
+                  .team-position Директор
+              
+              ul
+                li Магистр делового администрирования (MBA)
+                li Организатор Здравоохранения
+                li Врач - терапевт - эксперт
+                li Врач - дерматовенеролог (член Казахстанской ассоциации дерматовенерологов)
+
+              ul
+                li 2001 г. - Казахский государственный медицинский университет г. Алматы (специальность - лечебное дело)
+                li 2004 г. - Казахская государственная медицинская академия г. Нур-Султан (специальность - фармация)
+                li 2017 г. - Алматы менеджмент университет г. Нур-Султан - Магистр делового администрирования (MBA)
+                li 2018 и по настоящее время докторантура PhD
+
+              h3
+                span График приема физических лиц
+
+              p(style="font-size:16px") График приема физических лиц и представителей юридических лиц отдельными работниками РГП на ПХВ «Центральный клинический госпиталь для инвалидов Отечественной войны» Министерства здравоохранения Республики Казахстан
+
+              table
+                tr
+                  th ФИО<br>Должность
+                  th Дни приема
+                tr
+                  td 
+                    p Уразалина Динара Аманболовна <br>
+                    span Директор
+                  td Понедельник (еженедельно) с 9:00 до 11:00 ч.
+                tr
+                  td 
+                    p Шахметов Серик Сагиевич <br>
+                    span Заместитель директора по лечебной работе
+                  td Вторник (еженедельно) с 9:00 до 11:00 ч.
+                tr
+                  td 
+                    p Идрисова Салтанат Садыровна <br>
+                    span Заместитель директора по стратегическому развитию и ономике
+                  td Среда (еженедельно) с 9:00 до 11:00 ч.
+
+      .article-end
+        include includes/external
+    .page-end
+      include includes/footer.pug
