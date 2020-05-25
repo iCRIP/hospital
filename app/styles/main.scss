@@ -10,6 +10,7 @@
 @import 'media';
 @import 'signs';
 @import 'modal';
+@import 'article';
 @import 'footer';
 
 * {
@@ -28,7 +29,7 @@ h4 {
 }
 
 .page {
-  background-color: #e5e5e5;
+  background-color: #f2f2f2;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
