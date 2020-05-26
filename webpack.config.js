@@ -94,6 +94,11 @@ const commonConfig = merge([
         template: './zakup.pug',
         minify: false
       }),
+      new HtmlPlugin({
+        filename: 'zakup-single.html',
+        template: './zakup-single.pug',
+        minify: false
+      }),
       new FriendlyErrorsPlugin(),
       new StylelintPlugin(lintStylesOptions)
     ],
