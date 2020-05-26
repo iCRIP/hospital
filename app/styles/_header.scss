@@ -43,7 +43,7 @@
       }
 
       &::after {
-        content: '';
+        content: "";
         display: block;
       }
     }
@@ -87,7 +87,7 @@
     cursor: pointer;
 
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       top: 50%;
       right: 9px;
@@ -209,7 +209,7 @@
     cursor: pointer;
 
     &::after {
-      content: url('../images/icons/close.svg');
+      content: url("../images/icons/close.svg");
     }
   }
 

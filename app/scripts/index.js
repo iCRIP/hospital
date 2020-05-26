@@ -1,6 +1,6 @@
 import '../styles/main.scss'
-import 'bootstrap'
 import jQuery from 'jquery'
+import 'bootstrap'
 import 'slick-carousel'
 
 if (process.env.NODE_ENV !== 'production') {
@@ -32,7 +32,10 @@ jQuery(document).ready(function ($) {
   $(window).on('scroll', function () {
     scrollIn($('.anim'), 100, 'active')
   })
-  // eslint-disable-next-line no-console
+  $(window).on('load', function () {
+    scrollIn($('.anim'), 100, 'active')
+  })
+
   $('.navbar-menu-button, .mobile-menu-close-btn').click(function () {
     $('#mobile-menu').toggleClass('active')
   })
@@ -106,9 +109,6 @@ jQuery(document).ready(function ($) {
     nextSlide
   ) {
     // eslint-disable-next-line no-console
-    console.log(
-      $(this).parent().find('.slider-dots .slider-dot').eq(currentSlide)
-    )
     $(this)
       .parent()
       .find('.slider-dots .slider-dot')

@@ -4,7 +4,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const TerserPlugin = require('terser-webpack-plugin')
 
-const publicPath = '/'
+const publicPath = './'
 
 exports.publicPath = publicPath
 
@@ -135,7 +135,15 @@ exports.extractCSS = ({ include, exclude, options, use = [] } = {}) => ({
         include,
         exclude,
 
-        use: [MiniCssExtractPlugin.loader, ...sharedCSSLoaders, ...use]
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+              publicPath: '../'
+            }
+          },
+          ...sharedCSSLoaders,
+          ...use]
       }
     ]
   },
