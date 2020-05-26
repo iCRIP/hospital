@@ -1,7 +1,7 @@
 .breadcrumbs {
   list-style: none;
   padding: 0;
-  margin: 43px 0 0;
+  margin: 43px 0 29px;
   color: #707070;
 
   li {
@@ -56,6 +56,10 @@
   font-size: 18px;
   line-height: 1.4;
 
+  @include media-breakpoint-down(md) {
+    margin-top: 30px;
+  }
+
   p {
     margin-bottom: 1.4em;
   }
@@ -69,9 +73,18 @@
     }
   }
 
+  .big-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   &-title {
     font-size: 48px;
-    margin-top: 29px;
+
+    &--small {
+      font-size: 36px;
+    }
 
     @include media-breakpoint-down(md) {
       font-size: 28px;
@@ -110,6 +123,10 @@
     &-img {
       margin-top: 0;
       margin-right: 64px;
+
+      img {
+        max-width: 100%;
+      }
     }
 
     &-position {
@@ -120,6 +137,11 @@
     img {
       margin: 0;
     }
+  }
+
+  h2,
+  h3 {
+    margin-bottom: 37px;
   }
 
   ul {
@@ -260,16 +282,11 @@
 .sidebar {
   border: 22px solid $white;
   padding: 30px 18px 30px 28px;
-  margin-top: 57px;
   max-width: 285px;
   margin-bottom: 30px;
 
   &-wrap {
     margin-bottom: 40px;
-  }
-
-  @include media-breakpoint-down(md) {
-    margin-top: 20px;
   }
 
   &-link {
@@ -286,7 +303,7 @@
       }
 
       &::after {
-        content: url('../images/icons/external-icon.svg');
+        content: url("../images/icons/external-icon.svg");
         position: absolute;
         top: -3px;
         right: 0;
@@ -348,8 +365,36 @@
   }
 }
 
+.team {
+  &-item {
+    max-width: 242px;
+    margin-bottom: 60px;
+    cursor: pointer;
+
+    img {
+      margin: 0;
+    }
+
+    .team-name {
+      font-size: 24px;
+      color: $black;
+      margin-bottom: 10px;
+      margin-top: 24px;
+    }
+
+    .team-position {
+      color: $primary;
+      margin-top: 0;
+    }
+  }
+}
+
 .under-title {
   margin-top: 60px;
+
+  @include media-breakpoint-down(md) {
+    margin-top: 0;
+  }
 }
 
 .download {
@@ -397,7 +442,7 @@
       width: 45px;
       height: 59px;
       background-repeat: no-repeat;
-      background-image: url('../images/icons/pdf-icon.svg');
+      background-image: url("../images/icons/pdf-icon.svg");
       background-size: contain;
       margin-right: 11px;
       font-weight: bold;
@@ -413,5 +458,24 @@
       font-size: 14px;
       margin-bottom: 4px;
     }
+  }
+}
+
+.modal-article {
+  max-width: 100%;
+  width: 623px;
+  margin: 30px auto;
+
+  .team {
+    margin-bottom: 50px;
+  }
+
+  .team-name {
+    max-width: 276px;
+  }
+
+  .team-img {
+    max-width: 107px;
+    margin-right: 49px;
   }
 }

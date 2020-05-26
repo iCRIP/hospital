@@ -1,0 +1,86 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title Document
+  body.page
+    .page-start
+      include includes/header.pug
+      include includes/mobile-menu.pug
+    .page-body.about-page
+      .container
+        ul.breadcrumbs
+          li
+            a(href="#") Главная
+          li
+            span Пресс-центр 
+        .row
+          .col.col-lg-8.col-12
+            h1.article-title Пресс-центр
+        .row.under-title
+          aside.col.col-lg-3.col-12
+            .sidebar
+              ul.sidebar-list
+                li.active
+                  a(href="#") Новости
+                li
+                  a(href="#") ОСМС
+                li
+                  a(href="#") CМИ о нас
+                
+          .col.col-lg-8.col-12.offset-lg-1
+            .row
+              .col.col-lg-6.col-12
+                .news-item
+                  time.news-date 13.04.2020
+                  .news-img
+                    img(src="./images/news.png")
+                  h3.news-title Итоги конкурса рисунков "Победа, Здоровье, Весна"
+                  .news-text
+                    p Благодарим за участие всех детей! По итогам голосования и оценке внешнего эксперта были определены лучшие работы.
+              .col.col-lg-6.col-12
+                .news-item
+                  time.news-date 13.04.2020
+                  .news-img
+                    img(src="./images/news.png")
+                  h3.news-title Итоги конкурса рисунков "Победа, Здоровье, Весна"
+                  .news-text
+                    p Благодарим за участие всех детей! По итогам голосования и оценке внешнего эксперта были определены лучшие работы.
+              .col.col-lg-6.col-12
+                .news-item
+                  time.news-date 13.04.2020
+                  .news-img
+                    img(src="./images/news.png")
+                  h3.news-title Итоги конкурса рисунков "Победа, Здоровье, Весна"
+                  .news-text
+                    p Благодарим за участие всех детей! По итогам голосования и оценке внешнего эксперта были определены лучшие работы.
+              .col.col-lg-6.col-12
+                .news-item
+                  time.news-date 13.04.2020
+                  .news-img
+                    img(src="./images/news.png")
+                  h3.news-title Итоги конкурса рисунков "Победа, Здоровье, Весна"
+                  .news-text
+                    p Благодарим за участие всех детей! По итогам голосования и оценке внешнего эксперта были определены лучшие работы.
+              .col.col-lg-6.col-12
+                .news-item
+                  time.news-date 13.04.2020
+                  .news-img
+                    img(src="./images/news.png")
+                  h3.news-title Итоги конкурса рисунков "Победа, Здоровье, Весна"
+                  .news-text
+                    p Благодарим за участие всех детей! По итогам голосования и оценке внешнего эксперта были определены лучшие работы.
+
+            .pagination
+              a.active(href="#") 1
+              a(href="#") 2
+              a(href="#") 3
+              a(href="#") 4
+              a(href="#") 5
+
+      .article-end
+        include includes/external
+    .page-end
+      include includes/footer.pug

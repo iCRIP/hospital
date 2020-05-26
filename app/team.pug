@@ -1,0 +1,85 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title Document
+  body.page
+    .page-start
+      include includes/header.pug
+      include includes/mobile-menu.pug
+    .page-body.about-page
+      .container
+        ul.breadcrumbs
+          li
+            a(href="#") Главная
+          li
+            span Пациентам
+        .row
+          .col.col-lg-8.col-12
+            h1.article-title Врачи - специалисты
+        .row.under-title
+          aside.col.col-lg-3.col-12
+            .sidebar
+              ul.sidebar-list
+                li
+                  a(href="#") Консультативно-диагностическое отделение
+                li
+                  a(href="#") Платные услуги
+                li.active
+                  a(href="#") Врачи - специалисты
+
+          .col.col-lg-7.col-12.offset-lg-2.article
+            .row
+              .col.col-lg-6.col-12
+                .team-item(data-toggle="modal" data-target="#serviceModal")
+                  img(src="./images/team-1.png")
+                  .team-name Байкенова Жанат Шулуковна
+                  .team-position Терапевт
+              .col.col-lg-6.col-12
+                .team-item(data-toggle="modal" data-target="#serviceModal")
+                  img(src="./images/team-1.png")
+                  .team-name Байкенова Жанат Шулуковна
+                  .team-position Терапевт
+              .col.col-lg-6.col-12
+                .team-item(data-toggle="modal" data-target="#serviceModal")
+                  img(src="./images/team-1.png")
+                  .team-name Байкенова Жанат Шулуковна
+                  .team-position Терапевт
+              .col.col-lg-6.col-12
+                .team-item(data-toggle="modal" data-target="#serviceModal")
+                  img(src="./images/team-1.png")
+                  .team-name Байкенова Жанат Шулуковна
+                  .team-position Терапевт
+              .col.col-lg-6.col-12
+                .team-item(data-toggle="modal" data-target="#serviceModal")
+                  img(src="./images/team-1.png")
+                  .team-name Байкенова Жанат Шулуковна
+                  .team-position Терапевт
+              .col.col-lg-6.col-12
+                .team-item(data-toggle="modal" data-target="#serviceModal")
+                  img(src="./images/team-1.png")
+                  .team-name Байкенова Жанат Шулуковна
+                  .team-position Терапевт
+
+              .modal.fade#serviceModal(tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true")
+                .modal-dialog.modal-dialog-centered
+                  .modal-content
+                    .modal-article
+                      .team.w-100
+                        .team-img
+                          img(src="./images/team-1.png")
+                        .team-text
+                          .team-name Байкенова Жанат Шулуковна
+                          .team-position Директор
+                      .mobile-menu-close.close(data-dismiss="modal")
+
+                      p Байкенова Жанат Шултуковна, 1965 года рождения, казашка, образование высшее, в 1990 году окончилаКарагандинский государственный медицинский институт. Свою трудовую деятельность начала за долго до окончания медицинского института с 1988 года медицинской сестрой городской больницы г. Кокшетау. С 1991 – 1994 гг. врач-терапевт центральной больницы, с 1994 – 1995 гг. участковый врач – терапевт территориальной медицинской организации города Кокшетау. С 1995-2007 гг. заведующая приемным отделением Кокшетауской городской больницы. С 2007 – 2009 гг. участковый врач-терапевт в ГКП на ПХВ «Городская поликлиника № 3» города Нур-Султан. С 2009 года по настоящее время работает в Центральном клиническом госпитале для инвалидов Отечественной войны врачом терапевтом терапевтического отделения.
+                      p Имеет высшую квалификационную категорию по специальности «терапевт».
+                      p За многолетний, добросовестный труд награждена грамотами и медалями общественных объединений«Союз Чернобыльцев», «Союз ветеранов войны в Афганистане».
+
+      .article-end
+        include includes/external
+    .page-end
+      include includes/footer.pug
