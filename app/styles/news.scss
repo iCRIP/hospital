@@ -11,6 +11,25 @@
   &-item {
     max-width: 313px;
     margin-bottom: 60px;
+    position: relative;
+
+    &:hover {
+      .news-img {
+        transform: scale(1.05);
+      }
+
+      .news-title {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &-link {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
   }
 
   &-slider {
@@ -53,6 +72,7 @@
 
   &-img {
     margin-bottom: 20px;
+    transition: transform 0.4s;
 
     img {
       display: block;
