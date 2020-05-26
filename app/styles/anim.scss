@@ -1,0 +1,16 @@
+.anim {
+  &.fade-in {
+    opacity: 0;
+    transform: translate(-30px, -6px);
+    transition: 1s;
+
+    &-right {
+      transform: translate(30px, -6px);
+    }
+
+    &.active {
+      opacity: 1;
+      transform: translate(0, 0);
+    }
+  }
+}

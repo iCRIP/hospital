@@ -1,24 +1,25 @@
-@import 'fonts';
-@import 'vars';
+@import "fonts";
+@import "vars";
 @import "../../node_modules/bootstrap/scss/bootstrap";
 @import "../../node_modules/slick-carousel/slick/slick";
-@import 'header';
-@import 'main-slider';
-@import 'about';
-@import 'services';
-@import 'news';
-@import 'media';
-@import 'signs';
-@import 'modal';
-@import 'article';
-@import 'footer';
+@import "header";
+@import "main-slider";
+@import "about";
+@import "services";
+@import "news";
+@import "media";
+@import "signs";
+@import "modal";
+@import "article";
+@import "footer";
+@import "anim";
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 h1,
@@ -55,7 +56,7 @@ h4 {
   }
 
   &::after {
-    content: url('../images/icons/arrow.svg');
+    content: url("../images/icons/arrow.svg");
     margin-left: 10px;
     transition: transform 0.2s;
     display: inline-block;
@@ -106,7 +107,7 @@ h4 {
     }
 
     &::after {
-      content: url('../images/icons/external-icon.svg');
+      content: url("../images/icons/external-icon.svg");
       position: absolute;
       right: 16px;
       top: 16px;
