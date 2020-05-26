@@ -1,0 +1,59 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title Document
+  body.page
+    .page-start
+      include includes/header.pug
+      include includes/mobile-menu.pug
+    .page-body.about-page
+      .container
+        ul.breadcrumbs
+          li
+            a(href="#") Главная
+          li
+            span Государственные закупки
+        .row
+          .col.col-lg-5.col-12
+            h1.article-title Государственные закупки
+        .row.under-title
+          aside.col.col-lg-3.col-12.sidebar-wrap
+            .sidebar-links
+              .sidebar-label Ссылка
+              .sidebar-link
+                a(href="#") Открытый конкурс
+          .col.col-lg-6.col-12.offset-lg-2.article
+            .post-list
+              .post-item
+                time.post-date 07.05.2020
+                .post-name
+                  a(href="#") Объявление о проведении закупа изделий медицинского назначения, способом запроса ценовых предложений № 16
+              .post-item
+                time.post-date 07.05.2020
+                .post-name
+                  a(href="#") Объявление о проведении закупа изделий медицинского назначения, способом запроса ценовых предложений № 16
+              .post-item
+                time.post-date 07.05.2020
+                .post-name
+                  a(href="#") Объявление о проведении закупа изделий медицинского назначения, способом запроса ценовых предложений № 16
+              .post-item
+                time.post-date 07.05.2020
+                .post-name
+                  a(href="#") Объявление о проведении закупа изделий медицинского назначения, способом запроса ценовых предложений № 16
+              .post-item
+                time.post-date 07.05.2020
+                .post-name
+                  a(href="#") Объявление о проведении закупа изделий медицинского назначения, способом запроса ценовых предложений № 16
+
+            .pagination
+              a.active(href="#") 1
+              a(href="#") 2
+              a(href="#") 3
+              a(href="#") 4
+              a(href="#") 5
+
+    .page-end
+      include includes/footer.pug
